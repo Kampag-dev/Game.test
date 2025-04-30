@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panic Key Webpage</title>
+</head>
+<body>
+    <h1>Welcome to the Panic Key Webpage</h1>
+    <p>Press the "P" key to open IXL.com in a new tab!</p>
+
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'p' || event.key === 'P') {
+                window.open('https://www.ixl.com', '_blank');
+            }
+        });
+    </script>
+</body>
+</html>
